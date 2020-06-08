@@ -1,5 +1,5 @@
 <template>
-  <b-row class="row">
+  <b-row>
     <app-quote
       :key="quote + Date.now()"
       v-for="quote in quotes">
@@ -20,9 +20,4 @@ export default {
 </script>
 
 <style>
-.row {
-  font-family: 'Bad Script', cursive;
-  font-size: 2rem;
-  color: lightgray;
-}
 </style>
