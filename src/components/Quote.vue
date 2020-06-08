@@ -11,6 +11,9 @@
 
 <style lang="scss">
 .quote {
+  font-family: 'Bad Script', cursive;
+  font-size: 2rem;
+  color: lightgray;
   cursor: pointer;
 
   &:hover {
