@@ -1,5 +1,5 @@
 <template>
-  <b-col col sm="6" md="4" lg="3">
+  <b-col class="col" cols="12" sm="6" md="4" lg="3">
     <b-card class="quote">
       <slot></slot>
     </b-card>
@@ -9,7 +9,7 @@
 <script>
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .quote {
   font-family: 'Bad Script', cursive;
   font-size: 2rem;
@@ -20,5 +20,9 @@
     background-color: var(--red);
     color: var(--white);
   }
+}
+
+.col {
+  margin-bottom: 2rem;
 }
 </style>

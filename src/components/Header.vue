@@ -1,5 +1,5 @@
 <template>
-  <b-row>
+  <b-row class="header">
     <b-col sm="12">
       <h3>Quotes added</h3>
        <b-progress
@@ -18,3 +18,9 @@ export default {
   ],
 };
 </script>
+
+<style>
+.header {
+  margin-bottom: 2rem;
+}
+</style>
