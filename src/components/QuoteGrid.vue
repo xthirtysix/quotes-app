@@ -1,8 +1,9 @@
 <template>
   <b-row>
     <app-quote
-      :key="quote + Date.now()"
-      v-for="quote in quotes">
+      :key="i + Date.now()"
+      v-for="(quote, i) in quotes"
+      @click.native="deleteQuote(i)">
       {{ quote }}
     </app-quote>
   </b-row>
@@ -15,6 +16,11 @@ export default {
   props: ['quotes'],
   components: {
     appQuote: Quote,
+  },
+  methods: {
+    deleteQuote(i) {
+      this.$emit('quoteDeleted', i);
+    },
   },
 };
 </script>
